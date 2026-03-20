@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personagens de DragonBall</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>
+        <div class="radar">
+          <div class="radar-dot"></div>
+        </div>
+        Personagens de DragonBall
+      </h1>
+    </header>
+
+    <main>
+      <div class="formUser">
+        <div class="filter-group">
+          <label>Gênero:</label>
+          <label><input type="radio" name="g" checked value="" /> Ambos</label>
+          <label><input type="radio" name="g" value="Male" /> Homem</label>
+          <label><input type="radio" name="g" value="Female" /> Mulher</label>
+        </div>
+
+        <div class="filter-group">
+          <label for="race">Raça:</label>
+          <select id="race">
+            <option value="">Todas</option>
+            <option value="Saiyan">Sayajins</option>
+            <option value="Human">Humanos</option>
+            <option value="Android">Androids</option>
+            <option value="Namekian">Namekuseijins</option>
+            <option value="Frieza Race">Raça Freeza</option>
+            <option value="Majin">Majin</option>
+            <option value="God">Deuses</option>
+            <option value="Angel">Anjos</option>
+          </select>
+        </div>
+
+        <button onclick="buscar()">Buscar Personagens</button>
+      </div>
+
+      <hr class="divider" />
+
+      <div class="allUsers"></div>
+    </main>
+
+    <footer>
+      <p>Desenvolvido na disciplina de Programação Web - Genivaldo Neto</p>
+    </footer>
+
+    <button id="btn-musica" class="btn-musica">Solta o som DJ</button>
+    <div id="youtube-player"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
